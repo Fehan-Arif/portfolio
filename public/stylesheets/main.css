@@ -99,7 +99,8 @@ hr {
   display: flex;
   flex-direction: column;
   width: 50%;
-  justify-self: center;
+  /* justify-self: center; */
+  margin: 0 auto;
 }
 
 .code-skill-content {
@@ -137,7 +138,6 @@ hr {
   width: 250px;
   border-radius: 50%;
 }
-
 
 .contact-message {
   width: 40%;
