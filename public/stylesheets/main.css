@@ -94,7 +94,6 @@ hr {
   border-right: none;
 }
 
-/* Mark */
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -206,4 +205,77 @@ li a {
   margin: auto 10px;
   float: left;
   line-height: 2;
+}
+
+@media screen and (max-width: 1162px) {
+  .coffee-skill {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 856px) {
+  .skills-container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  #top-container {
+    min-width: 0;
+  }
+
+  .mountain {
+    height: 200px;
+  }
+
+  .code-skills,
+  .coffeeImg {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 402px) {
+  .name {
+    font-size: 3.62em;
+  }
+
+  .job-Title {
+    font-size: 1rem;
+  }
+
+  .bottomCloud {
+    bottom: 121px;
+  }
+
+  .code-skills,
+  .coffeeImg {
+    display: none;
+  }
+
+  .code-skill-content,
+  .coffee-skill-content {
+    align-items: center;
+  }
+
+  .coffee-skill {
+    text-align: left;
+  }
+
+  .contact-message {
+    width: 60%;
+  }
+
+  .bottomCloud.horizTranslate {
+    left: 135px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .code-skill-content,
+  .coffee-skill-content,
+  .coffee-skill {
+    text-align: center;
+  }
 }
