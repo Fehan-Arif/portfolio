@@ -1,67 +1,26 @@
+/* Global Styles */
 body {
   margin: 0;
-  text-align: center;
-  color: #66bfbf;
+  font-size: 14px;
 }
 
-#top-container {
-  position: relative;
-  padding-top: 100px;
-  min-width: 540px;
-  background-color: #eaf6f6;
-}
-
+/* Headings */
 h1 {
-  font-size: 5.62em;
   font-family: "Sacramento", cursive;
-  margin: 50px 0 0 0;
+  font-size: 3rem;
+}
+
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  font-weight: normal;
-  line-height: 1;
+  font-size: 2rem;
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
   color: #11999e;
-}
-
-.topCloud {
-  position: absolute;
-  top: 50px;
-  right: 0px;
-}
-
-.topCloud.horizTranslate {
-  -webkit-transition: 3s;
-  -moz-transition: 3s;
-  -ms-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
-  right: 250px !important;
-}
-
-.bottomCloud {
-  position: absolute;
-  bottom: 300px;
-  left: 0px;
-}
-
-.bottomCloud.horizTranslate {
-  -webkit-transition: 3s;
-  -moz-transition: 3s;
-  -ms-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
-  left: 250px !important;
-}
-
-.mountain {
-  max-width: 100%;
-  height: auto;
 }
 
 p {
@@ -69,89 +28,24 @@ p {
   line-height: 2;
 }
 
-.intro {
-  width: 30%;
-  margin: auto;
-}
-
-#middle-container {
-  background-color: white;
-}
-
-.profile-img {
-  margin: 100px 0 25px;
-  height: 25%;
-  width: 25%;
-  border-radius: 50%;
-}
-
+/* Horizontal Rule */
 hr {
   border-top: 6px dotted #b4bbbb;
   width: 4%;
-  margin: 100px auto;
+  margin: 50px auto;
   border-bottom: none;
-  border-left: none;
-  border-right: none;
 }
 
-.skills-container {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  /* justify-self: center; */
-  margin: 0 auto;
+/* Clouds */
+.topCloud,
+.bottomCloud {
+  position: absolute;
 }
 
-.code-skill-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.skills {
-  display: flex;
-  align-items: center;
-}
-
-.skills-coffee {
-  flex-direction: row-reverse;
-}
-
-/**/
-.code-skills {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-}
-
-.coffee-skill-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-/**/
-.coffeeImg {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-}
-
-.contact-message {
-  width: 40%;
-  margin: 20px auto;
-}
-
+/* Buttons */
 .btn {
   background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
   background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
   border-radius: 8px;
   color: #ffffff;
   font-family: "Montserrat";
@@ -166,66 +60,188 @@ hr {
 }
 
 .btn:hover {
-  /* border: solid #337FED 1px; */
   background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-  /* -webkit-border-radius: 20px;
-       -moz-border-radius: 20px;
-       border-radius: 20px; */
-  text-decoration: none;
 }
 
+/* Links */
 a:hover {
   color: #eaf6f6;
 }
 
-#bottom-container {
-  margin-top: 100px;
-  background-color: #66bfbf;
-  height: auto;
-  padding: 50px 0;
-}
-
-.copyright {
-  margin-bottom: 0;
-  color: white;
-}
-
-li {
-  display: inline-block;
-}
-
-li a {
-  text-decoration: none;
-  color: #11999e;
-  margin: auto 10px;
-  float: left;
-  line-height: 2;
-}
-
-@media screen and (max-width: 1162px) {
-  .coffee-skill {
-    text-align: right;
+/* Small devices (mobile phones) */
+@media (min-width: 320px) {
+  body {
+    font-size: 15px;
+    color: #66bfbf;
+    text-align: center;
   }
-}
 
-@media screen and (max-width: 856px) {
-  .skills-container {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 543px) {
+  /* Top Container */
+  /* Container */
   #top-container {
-    min-width: 0;
+    background-color: #eaf6f6;
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  .job-Title {
+    font-size: 1.2rem;
+  }
+
+  /* Clouds */
+  .topCloud,
+  .bottomCloud {
+    width: 80px;
+  }
+
+  .topCloud {
+    top: 50px;
+    right: 0;
+  }
+
+  .topCloud.horizTranslate {
+    transition: 3s;
+    right: 200px !important;
+  }
+
+  .bottomCloud {
+    top: 200px;
+    left: 0;
+  }
+
+  .bottomCloud.horizTranslate {
+    transition: 3s;
+    left: 200px !important;
   }
 
   .mountain {
     height: 200px;
+    width: 250px;
+  }
+
+  /* Middle Container */
+  /*  Container */
+  #middle-container {
+    background-color: white;
+  }
+
+  /* Profile Image */
+  .profile-img {
+    margin: 100px 0 25px;
+    height: 25%;
+    width: 25%;
+    border-radius: 50%;
+  }
+
+  /* Intro Section */
+  .intro,
+  .code-skill,
+  .coffee-skill,
+  .contact-message {
+    width: 60%;
+    margin: auto;
+  }
+
+  /* Skills Container */
+  /* Container */
+  .code-skills,
+  .coffeeImg {
+    height: 50px;
+    width: 50px;
+  }
+
+  .skills-coffee {
+    margin-top: 80px;
+  }
+
+  /* Contact Message */
+  .btn {
+    margin-top: 30px;
+  }
+
+  /* Bottom Container */
+  /* Container */
+  #bottom-container {
+    margin-top: 100px;
+    background-color: #66bfbf;
+    padding: 50px 0;
+  }
+
+  .footer-link-container {
+    padding-left: 0;
+  }
+
+  .copyright {
+    margin-bottom: 0;
+    color: white;
+  }
+
+  /* List Items */
+  li {
+    display: inline-block;
+  }
+
+  li a {
+    text-decoration: none;
+    color: #11999e;
+    margin: auto 10px;
+    float: left;
+    line-height: 2;
+  }
+}
+
+@media (min-width: 375px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  /* Top Container */
+  /* Container */
+  .mountain {
+    height: 225px;
+    width: 400px;
+  }
+
+  .topCloud,
+  .bottomCloud {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  /* Top Container */
+  /* Container */
+  .mountain {
+    height: 350px;
+    width: 480px;
+  }
+
+  .topCloud,
+  .bottomCloud {
+    width: 200px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  /* Skills Container */
+  /* Container */
+  .skills-container {
+    margin-bottom: 100px;
   }
 
   .code-skills,
@@ -233,49 +249,64 @@ li a {
     height: 150px;
     width: 150px;
   }
-}
 
-@media screen and (max-width: 402px) {
-  .name {
-    font-size: 3.62em;
-  }
-
-  .job-Title {
-    font-size: 1rem;
-  }
-
-  .bottomCloud {
-    bottom: 121px;
-  }
-
-  .code-skills,
-  .coffeeImg {
-    display: none;
-  }
-
-  .code-skill-content,
-  .coffee-skill-content {
+  .skills {
+    display: flex;
     align-items: center;
+    margin: 0 20%;
   }
 
-  .coffee-skill {
+  .skills-code {
     text-align: left;
   }
 
-  .contact-message {
-    width: 60%;
+  .code-skill-content {
+    margin-left: 20px;
   }
 
-  .bottomCloud.horizTranslate {
-    left: 135px !important;
+  .code-skill,
+  .coffee-skill {
+    width: 100%;
+    margin: 0;
+  }
+
+  .skills-coffee {
+    flex-direction: row-reverse;
+  }
+
+  .coffee-skill-content {
+    text-align: right;
+    margin-right: 20px;
   }
 }
 
-@media screen and (max-width: 320px) {
+/* Large devices (laptops/desktops) */
+@media (min-width: 1280px) {
+  body {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .mountain {
+    width: 550px;
+  }
+}
 
-  .code-skill-content,
-  .coffee-skill-content,
-  .coffee-skill {
-    text-align: center;
+@media (min-width: 1440px) {
+  body {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    font-size: 26px;
+  }
+  h1 {
+    font-size: 6rem;
   }
 }
