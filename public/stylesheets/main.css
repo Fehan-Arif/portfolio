@@ -1,3 +1,8 @@
+/* Custom properties */
+:root {
+  --p-size: 1rem;
+}
+
 /* Global Styles */
 body {
   margin: 0;
@@ -26,6 +31,7 @@ h3 {
 p {
   color: #40514e;
   line-height: 2;
+  font-size: var(--p-size);
 }
 
 /* Horizontal Rule */
@@ -204,6 +210,10 @@ a:hover {
     font-size: 18px;
   }
 
+  :root {
+    --p-size: 1.125rem;
+  }
+
   /* Top Container */
   /* Container */
   .mountain {
@@ -236,6 +246,10 @@ a:hover {
 
   h1 {
     font-size: 4rem;
+  }
+
+  :root {
+    --p-size: 1.25rem;
   }
 
   /* Skills Container */
@@ -285,9 +299,15 @@ a:hover {
   body {
     font-size: 22px;
   }
+
   h1 {
     font-size: 5rem;
   }
+
+  :root {
+    --p-size: 1.375rem;
+  }
+
   .mountain {
     width: 550px;
   }
@@ -297,8 +317,13 @@ a:hover {
   body {
     font-size: 24px;
   }
+
   h1 {
     font-size: 6rem;
+  }
+
+  :root {
+    --p-size: 1.5rem;
   }
 }
 
@@ -306,7 +331,12 @@ a:hover {
   body {
     font-size: 26px;
   }
+
   h1 {
     font-size: 6rem;
+  }
+
+  :root {
+    --p-size: 1.625rem;
   }
 }
